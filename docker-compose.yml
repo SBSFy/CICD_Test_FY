@@ -1,0 +1,12 @@
+version: '3.2'
+services:
+  test-deploy-service:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    environment:
+      - SPRING_PROFILES_ACTIVE=stage
+      - JAVA_TOOL_OPTIONS=-Xmx128M
+    ports:
+      - 7001:7001
+

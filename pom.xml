@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.fytest</groupId>
-    <artifactId>CICD-Test_FY</artifactId>
+    <artifactId>fyrnd</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>CICD-Test_FY</name>
+    <name>fyrnd</name>
     <description>CICD-Test_FY</description>
     <properties>
         <java.version>17</java.version>
