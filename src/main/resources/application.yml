@@ -7,5 +7,8 @@ spring:
   jpa:
     show-sql: false
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
+  devtools:
+    restart:
+      enabled: false
 

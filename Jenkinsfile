@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'mvn clean install -pl fyrnd -am'
+        sh 'mvn clean install -pl :CICD-Test_FY -am'
       }
     }
     stage('Build Docker Image') {
