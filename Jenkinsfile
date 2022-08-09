@@ -15,16 +15,12 @@ pipeline {
     }
     stage('Build Docker Image') {
       steps {
-        dir("user") {
           sh 'docker-compose build'
-        }
       }
     }
     stage('Run Docker Image') {
       steps {
-        dir("user") {
           sh 'docker-compose up --detach'
-        }
       }
     }
   }
