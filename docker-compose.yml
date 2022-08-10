@@ -1,6 +1,6 @@
 version: '3.2'
 services:
-  test-deploy-service:
+  test-deploy-service-1:
     build:
       context: ./
       dockerfile: ./Dockerfile
