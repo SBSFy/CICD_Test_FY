@@ -8,5 +8,5 @@ services:
       - SPRING_PROFILES_ACTIVE=stage
       - JAVA_TOOL_OPTIONS=-Xmx128M
     ports:
-      - 7001:7001
+      - 6001:6001
 
