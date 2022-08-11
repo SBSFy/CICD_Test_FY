@@ -20,5 +20,6 @@ public class User {
     private long age;
     private String gender;
     private String email;
+    private String att;
     private String password;
 }
