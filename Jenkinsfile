@@ -13,8 +13,8 @@ pipeline {
       causeString: 'Triggered on $ref',
       regexpFilterText: '$ref',
       regexpFilterExpression: 'refs/tags/deploy/test-tag',
-      regexpFilterText: '$after',
-      regexpFilterExpression: '^(?!0000000000000000000000000000000000000000$)'
+      regexpFilterAfter: '$after',
+      regexpFilterExpressionAfter: '^(?!0000000000000000000000000000000000000000$)'
     )
   }
 
