@@ -11,7 +11,7 @@ pipeline {
       tokenCredentialId: '',
       causeString: 'Triggered on $ref',
       regexpFilterText: '$ref',
-      regexpFilterExpression: 'refs/tags/deploy/' + TAG_NAME,
+      regexpFilterExpression: 'refs/tags/deploy/*',
     )
   }
 
