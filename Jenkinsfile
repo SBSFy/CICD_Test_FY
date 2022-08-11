@@ -7,6 +7,7 @@ pipeline {
       genericVariables: [
       [key:'ref', value:'$.ref']
       ],
+      causeString: 'Triggered on $ref',
       regexpFilterText: '$ref',
       regexpFilterExpression: 'refs/tags/deploy/test-tag'
     )
