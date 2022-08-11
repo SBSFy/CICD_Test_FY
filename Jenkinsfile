@@ -2,6 +2,14 @@ pipeline {
  
   agent any
 
+  triggers{
+    GenericTrigger(
+      genericVariables: [key:'ref', value='$.ref'],
+      regexpFilterText: '$ref',
+      regexpFilterExpression: 'refs/tags/deploy/test-tag'
+    )
+  }
+
   tools {
     maven 'maven 3.8.4'
     jdk 'jdk17'
