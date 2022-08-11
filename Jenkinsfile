@@ -14,7 +14,7 @@ pipeline {
       regexpFilterText: '$ref',
       regexpFilterExpression: 'refs/tags/deploy/test-tag'
       regexpFilterText: '$after'
-      !regexpFilterExpression: '^(?!0000000000000000000000000000000000000000$)'
+      regexpFilterExpression: '^(?!0000000000000000000000000000000000000000$)'
     )
   }
 
