@@ -5,13 +5,16 @@ pipeline {
   triggers{
     GenericTrigger(
       genericVariables: [
-      [key:'ref', value:'$.ref']
+      [key:'ref', value:'$.ref'],
+      [key:'after',value:'$.after']
       ],
       token: 'abc',
       tokenCredentialId: '',
       causeString: 'Triggered on $ref',
       regexpFilterText: '$ref',
       regexpFilterExpression: 'refs/tags/deploy/test-tag'
+      regexpFilterText: '$after'
+      !regexpFilterExpression: '^(?!0000000000000000000000000000000000000000$)'
     )
   }
 
