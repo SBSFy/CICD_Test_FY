@@ -15,6 +15,6 @@ public class TestController {
 
     @GetMapping()
     public String helloWorld(){
-        return "Connected/Deployed";
+        return "Auto Deploy With Tag Success";
     }
 }
