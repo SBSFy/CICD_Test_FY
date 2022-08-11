@@ -5,8 +5,7 @@ pipeline {
   triggers{
     GenericTrigger(
       genericVariables: [
-      [key:'ref', value:'$.ref'],
-      [key:'after',value:'$.after',regexFilter:'^(?!"0000000000000000000000000000000000000000"$)']
+      [key:'ref', value:'$.ref']
       ],
       token: 'abc',
       tokenCredentialId: '',
