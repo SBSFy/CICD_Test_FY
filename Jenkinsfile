@@ -4,7 +4,9 @@ pipeline {
 
   triggers{
     GenericTrigger(
-      genericVariables: [key:'ref', value:'$.ref'],
+      genericVariables: [
+      [key:'ref', value:'$.ref']
+      ],
       regexpFilterText: '$ref',
       regexpFilterExpression: 'refs/tags/deploy/test-tag'
     )
