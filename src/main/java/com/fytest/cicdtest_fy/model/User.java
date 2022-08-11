@@ -21,7 +21,5 @@ public class User {
     private String gender;
     private String email;
     private String address;
-    private String att;
-
     private String password;
 }
