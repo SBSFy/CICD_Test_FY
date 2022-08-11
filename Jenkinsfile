@@ -6,15 +6,13 @@ pipeline {
     GenericTrigger(
       genericVariables: [
       [key:'ref', value:'$.ref'],
-      [key:'after',value:'$.after']
+      [key:'after',value:'$.after',expressionType:'JSONPATH',regexFilter:'^(?!0000000000000000000000000000000000000000$)']
       ],
       token: 'abc',
       tokenCredentialId: '',
       causeString: 'Triggered on $ref',
       regexpFilterText: '$ref',
       regexpFilterExpression: 'refs/tags/deploy/test-tag',
-      regexpFilterAfter: '$after',
-      regexpFilterExpressionAfter: '^(?!0000000000000000000000000000000000000000$)'
     )
   }
 
